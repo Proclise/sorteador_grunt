@@ -1,0 +1,16 @@
+npm i -g grunt-cli
+
+npm init
+
+npm  i --save-dev grunt
+
+
+module.exports = function(grunt) {
+    grunt.initconfig({
+        pkg: grunt.file.readJSON('package.json'),
+    })
+}
+
+
+npm i --save-dev grunt-contrib-watch
+(plugin para acompanhar as alterações em tempo real
